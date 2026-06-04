@@ -158,7 +158,7 @@ export default function PortfolioUpgraded() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const switchTab = (tabId) => {
+  const switchTab = (tabId: string) => {
     if (tabId === activeTab || animating) return;
     setAnimating(true);
     setPrevTab(activeTab);
